@@ -41,7 +41,7 @@ test("gets player's health value", () => {
 	expect(player.getHealth()).toEqual(expect.stringContaining(player.health.toString()));
 });
 
-test('checks if play is alive or not', () => {
+test('checks if player is alive or not', () => {
 	const player = new Player('Dave');
 
 	expect(player.isAlive()).toBeTruthy();
@@ -64,7 +64,7 @@ test("subtracts from player's health", () => {
 	expect(player.health).toBe(0);
 });
 
-test("gets player's attack values", () => {
+test("gets player's attack value", () => {
 	const player = new Player('Dave');
 	player.strength = 10;
 
